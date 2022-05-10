@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>paint</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="login">
     <body>
 <?php     
 
-require('cobdd.php');
+require('../cobdd.php');
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = filter_input(INPUT_POST, "username");
     $username = str_replace(' ', '_', $username);

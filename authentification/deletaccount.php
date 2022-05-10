@@ -13,7 +13,7 @@
 <div class="login">
     <body>
     <?php 
-    require('cobdd.php');
+    require('../cobdd.php');
     session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST" ) {
     $username = filter_input(INPUT_POST, "username");
